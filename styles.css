@@ -1,0 +1,58 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  color: #ff4081;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Part 1: CSS Button Animation */
+.animated-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #6200ea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-btn:hover {
+  background: #3700b3;
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Part 3: Animated Box */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: #ff5722;
+  border-radius: 8px;
+}
+
+/* Define animation */
+@keyframes moveAndFade {
+  0%   { transform: translateY(0); opacity: 1; }
+  50%  { transform: translateY(-100px); opacity: 0.5; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Class that will be toggled by JS */
+.animate {
+  animation: moveAndFade 2s ease-in-out;
+}

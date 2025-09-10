@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animations Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Interactive Animations Demo</h1>
+    <p>By combining CSS3 & JavaScript</p>
+  </header>
+
+  <!-- Part 1: Buttons with CSS animations -->
+  <section>
+    <h2>Part 1: CSS Transitions</h2>
+    <button class="animated-btn">Hover Me!</button>
+  </section>
+
+  <!-- Part 2: JS Functions -->
+  <section>
+    <h2>Part 2: JavaScript Functions</h2>
+    <p>Enter two numbers and click "Add":</p>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="showSum()">Add</button>
+    <p id="sumResult">Result will appear here...</p>
+  </section>
+
+  <!-- Part 3: Combining CSS & JS -->
+  <section>
+    <h2>Part 3: JS Triggered Animations</h2>
+    <div class="box" id="animatedBox"></div>
+    <button onclick="triggerBoxAnimation()">Animate Box</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
